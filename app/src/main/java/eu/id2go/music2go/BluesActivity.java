@@ -1,18 +1,17 @@
 package eu.id2go.music2go;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Adapter;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class PopActivity extends AppCompatActivity {
+public class BluesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pop);
+        setContentView(R.layout.activity_blues);
 
 
                   /*Creation of ArrayList: I'm going to add String
@@ -22,7 +21,7 @@ public class PopActivity extends AppCompatActivity {
 //            /*This is how elements should be added to the array list*/
 
 
-        songs.add(new Music("Madonna"));
+        songs.add(new Music("Van Morrison"));
 //        words.add(new Word("two", "otiiko"));
 //        words.add(new Word("three", "tolookosu"));
 //        words.add(new Word("four", "oyyisa"));

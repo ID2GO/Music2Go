@@ -24,19 +24,19 @@
         android:text="@string/category_pop"/>
 
      <TextView
-        android:id="@+id/Rock"
+         android:id="@+id/rock"
         style="@style/CategoryStyle"
         android:background="@color/category_rock"
         android:text="@string/category_rock"/>
 
     <TextView
-        android:id="@+id/Blues"
+        android:id="@+id/blues"
         style="@style/CategoryStyle"
         android:background="@color/category_blues"
         android:text="@string/category_blues"/>
 
     <TextView
-        android:id="@+id/Jazz"
+        android:id="@+id/jazz"
         style="@style/CategoryStyle"
         android:background="@color/category_jazz"
         android:text="@string/category_jazz"/>

@@ -18,8 +18,16 @@
         </activity>
         <activity
             android:name=".PopActivity"
-            android:label="Pop" >
-        </activity>
+            android:label="Pop" />
+        <activity
+            android:name=".RockActivity"
+            android:label="Rock" />
+        <activity
+            android:name=".BluesActivity"
+            android:label="Blues" />
+        <activity
+            android:name=".JazzActivity"
+            android:label="Jazz" />
 
     </application>
 
