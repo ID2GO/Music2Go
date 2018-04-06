@@ -21,27 +21,9 @@ public class JazzActivity extends AppCompatActivity {
 //            /*This is how elements should be added to the array list*/
 
 
-        songs.add(new Music("Bird Backarack"));
-//        words.add(new Word("two", "otiiko"));
-//        words.add(new Word("three", "tolookosu"));
-//        words.add(new Word("four", "oyyisa"));
-//        words.add(new Word("five", "massokka"));
-//        words.add(new Word("six", "temmokka"));
-//        words.add(new Word("seven", "kenekaku"));
-//        words.add(new Word("eight", "kawinta"));
-//        words.add(new Word("nine", "wo'e"));
-//        words.add(new Word("ten", "na'aacha"));
+        songs.add(new Music("U2", "Every Breaking Wave", "Songs of Innocence", R.drawable
+                .u2_october_front, R.raw.i_fall_down));
 
-//        getResources().getString(R.string.eng_1), (R.string.miwok_1);
-//        getResources().getString(R.string.eng_2);
-//        getResources().getString(R.string.eng_3);
-//        getResources().getString(R.string.eng_4);
-//        getResources().getString(R.string.eng_5);
-//        getResources().getString(R.string.eng_6);
-//        getResources().getString(R.string.eng_7);
-//        getResources().getString(R.string.eng_8);
-//        getResources().getString(R.string.eng_9);
-//        getResources().getString(R.string.eng_10);
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -62,4 +44,7 @@ public class JazzActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
 
     }
+
+//    @Override
+//    protected int getBackgroundColor() { return R.color.category_jazz; }
 }

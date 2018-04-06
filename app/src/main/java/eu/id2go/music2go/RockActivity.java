@@ -14,34 +14,34 @@ public class RockActivity extends AppCompatActivity {
         setContentView(R.layout.activity_rock);
 
 
+
                   /*Creation of ArrayList: I'm going to add String
            *elements so I made it of string type
            */
         ArrayList<Music> songs = new ArrayList<>();
 //            /*This is how elements should be added to the array list*/
 
+        songs.add(new Music("Bruce Springsteen", "Blinded By The Light", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_front, R.raw.blinded_by_the_light));
+        songs.add(new Music("Bruce Springsteen", "Growin' Up", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_back, R.raw.growin_up));
+        songs.add(new Music("Bruce Springsteen", "Mary Queen Of Arkansas", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_front, R.raw.mary_queen_of_arkansas));
+        songs.add(new Music("Bruce Springsteen", "Does This Bus Stop At 82nd Street", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_back, R.raw.does_this_bus_stop_at_82nd_street));
+        songs.add(new Music("Bruce Springsteen", "Lost In The Flood", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_front, R.raw.does_this_bus_stop_at_82nd_street));
+        songs.add(new Music("Bruce Springsteen", "The Angel", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_back, R.raw.the_angel));
+        songs.add(new Music("Bruce Springsteen", "For You", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_front, R.raw.for_you));
+        songs.add(new Music("Bruce Springsteen", "Spirit In The Night", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_back, R.raw
+                .spirit_in_the_night));
+        songs.add(new Music("Bruce Springsteen", "09-It's Hard To Be A Saint In The City", "Greetings from " +
+                "Ashbury Park", R.drawable.greetings_from_ashbury_park_front, R.raw
+                .its_hard_to_be_a_saint_in_the_city));
 
-        songs.add(new Music("U2"));
-//        words.add(new Word("two", "otiiko"));
-//        words.add(new Word("three", "tolookosu"));
-//        words.add(new Word("four", "oyyisa"));
-//        words.add(new Word("five", "massokka"));
-//        words.add(new Word("six", "temmokka"));
-//        words.add(new Word("seven", "kenekaku"));
-//        words.add(new Word("eight", "kawinta"));
-//        words.add(new Word("nine", "wo'e"));
-//        words.add(new Word("ten", "na'aacha"));
-
-//        getResources().getString(R.string.eng_1), (R.string.miwok_1);
-//        getResources().getString(R.string.eng_2);
-//        getResources().getString(R.string.eng_3);
-//        getResources().getString(R.string.eng_4);
-//        getResources().getString(R.string.eng_5);
-//        getResources().getString(R.string.eng_6);
-//        getResources().getString(R.string.eng_7);
-//        getResources().getString(R.string.eng_8);
-//        getResources().getString(R.string.eng_9);
-//        getResources().getString(R.string.eng_10);
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -61,5 +61,10 @@ public class RockActivity extends AppCompatActivity {
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
 
+
     }
+
+//    @Override
+//    protected int getBackgroundColor() { return R.color.category_rock; }
+
 }

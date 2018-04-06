@@ -22,27 +22,32 @@ public class PopActivity extends AppCompatActivity {
 //            /*This is how elements should be added to the array list*/
 
 
-        songs.add(new Music("Madonna"));
-//        words.add(new Word("two", "otiiko"));
-//        words.add(new Word("three", "tolookosu"));
-//        words.add(new Word("four", "oyyisa"));
-//        words.add(new Word("five", "massokka"));
-//        words.add(new Word("six", "temmokka"));
-//        words.add(new Word("seven", "kenekaku"));
-//        words.add(new Word("eight", "kawinta"));
-//        words.add(new Word("nine", "wo'e"));
-//        words.add(new Word("ten", "na'aacha"));
+        songs.add(new Music("U2", "U2 - October", "U2 - October", R.drawable
+                .u2_october_front, R.raw.u2_october));
+        songs.add(new Music("U2", "Gloria", "U2 - October", R.drawable
+                .u2_october_front, R.raw.gloria));
+        songs.add(new Music("U2", "I Fall Down", "U2 - October", R.drawable
+                .u2_october_front, R.raw.i_fall_down));
+        songs.add(new Music("U2", "I Threw A Brick Through A Window", "U2 - October", R.drawable
+                .u2_october_front, R.raw.i_threw_a_brick_through_a_window));
+        songs.add(new Music("U2", "Rejoice", "U2 - October", R.drawable
+                .u2_october_front, R.raw.rejoice));
+        songs.add(new Music("U2", "Fire", "U2 - October", R.drawable
+                .u2_october_front, R.raw.fire));
+        songs.add(new Music("U2", "Tomorrow", "U2 - October", R.drawable
+                .u2_october_front, R.raw.tomorrow));
+        songs.add(new Music("U2", "October", "U2 - October", R.drawable
+                .u2_october_front, R.raw.october));
+        songs.add(new Music("U2", "08 - With A Shout (Jerusalem)", "U2 - October", R.drawable
+                .u2_october_front, R.raw.with_a_shout_jerusalem));
+        songs.add(new Music("U2", "Stranger In A Strange Land", "U2 - October", R.drawable
+                .u2_october_front, R.raw.stranger_in_a_strange_land));
+        songs.add(new Music("U2", "Scarlet", "U2 - October", R.drawable
+                .u2_october_front, R.raw.scarlet));
+        songs.add(new Music("U2", "Is That All ", "U2 - October", R.drawable
+                .u2_october_front, R.raw.is_that_all));
 
-//        getResources().getString(R.string.eng_1), (R.string.miwok_1);
-//        getResources().getString(R.string.eng_2);
-//        getResources().getString(R.string.eng_3);
-//        getResources().getString(R.string.eng_4);
-//        getResources().getString(R.string.eng_5);
-//        getResources().getString(R.string.eng_6);
-//        getResources().getString(R.string.eng_7);
-//        getResources().getString(R.string.eng_8);
-//        getResources().getString(R.string.eng_9);
-//        getResources().getString(R.string.eng_10);
+
 
         // Create an {@link ArrayAdapter}, whose data source is a list of Strings. The
         // adapter knows how to create layouts for each item in the list, using the
@@ -62,5 +67,8 @@ public class PopActivity extends AppCompatActivity {
         // 1 argument, which is the {@link ArrayAdapter} with the variable name itemsAdapter.
         listView.setAdapter(adapter);
 
+
     }
+//    @Override
+//    protected int getBackgroundColor() { return R.color.category_pop; }
 }

@@ -8,34 +8,80 @@ package eu.id2go.music2go;
 
 public class Music {
 
-    /** Default translation for the word*/
-//    private String mDefaultTranslation;
+    /**
+     * Name of the Artist
+     */
+    private String mArtist;
 
-    /** Miwok translation for the word */
+    /**
+     * Name of the Song
+     */
     private String mSongTitle;
 
     /**
-     * Create a new word object
-     * @param DefaultTranslation is the word in the users language
-     * @param SongTitle is the word in the Miwok language
+     * Name of the Album
      */
-    public Music(String SongTitle) {
-//    public Word(String DefaultTranslation, String SongTitle) {
-//        mDefaultTranslation = DefaultTranslation;
+    private String mAlbum;
+
+    /**
+     * Name of the AlbumImage
+     */
+    private int mImageResourceId;
+
+    /**
+     * Name of the AudioFile
+     */
+    private int mAudioResourceId;
+
+
+    /**
+     * Create a new word object
+     * @param Artist is the name of the artist
+     * @param SongTitle is the name of the song
+     * @param Album is the name of the album
+     */
+    public Music(String Artist, String SongTitle, String Album, int imageResourceId,
+                 int audioResourceId) {
+        mArtist = Artist;
         mSongTitle = SongTitle;
+        mAlbum = Album;
+        mImageResourceId = imageResourceId;
+        mAudioResourceId = audioResourceId;
     }
 
     /**
-     * Get the default translation of the word
+     * Get the name of the artist
      */
-//    public String getDefaultTranslation() {
-//        return mDefaultTranslation;
-//    }
+    public String getArtist() {
+        return mArtist;
+    }
 
     /**
-     * Get the Miwok translation of the word
+     * Get the name of the song
      */
     public String getSongTitle() {
         return mSongTitle;
     }
+
+    /**
+     * Get the name of the song
+     */
+    public String getAlbum() {
+        return mAlbum;
+    }
+
+    /**
+     * Get the image of the Album
+     */
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
+
+    /**
+     * Get the audioFile of the song
+     */
+    public int getAudioResourceId() {
+        return mAudioResourceId; }
+
+
 }
