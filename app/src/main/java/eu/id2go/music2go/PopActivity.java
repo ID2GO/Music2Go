@@ -1,8 +1,7 @@
 package eu.id2go.music2go;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Adapter;
+import android.support.v7.app.AppCompatActivity;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -22,8 +21,6 @@ public class PopActivity extends AppCompatActivity {
 //            /*This is how elements should be added to the array list*/
 
 
-        songs.add(new Music("U2", "U2 - October", "U2 - October", R.drawable
-                .u2_october_front, R.raw.u2_october));
         songs.add(new Music("U2", "Gloria", "U2 - October", R.drawable
                 .u2_october_front, R.raw.gloria));
         songs.add(new Music("U2", "I Fall Down", "U2 - October", R.drawable

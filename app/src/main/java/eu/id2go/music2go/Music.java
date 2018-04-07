@@ -1,7 +1,7 @@
 package eu.id2go.music2go;
 
 /**
- * {@Link Music} represents a selection of music in a genre that the user wants to listen to.
+ * {Music Class} represents a selection of music in a genre that the user wants to listen to.
  * it contains a list of songs.
  * Created by rob on 30-3-18.
  */
