@@ -7,7 +7,6 @@ import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -59,20 +58,20 @@ public class MusicAdapter extends ArrayAdapter<Music> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         // Check if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if(listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(
+        View listViewItem = convertView;
+        if (listViewItem == null) {
+            listViewItem = LayoutInflater.from(getContext()).inflate(
                     R.layout.list_item, parent, false);
         }
 
-        listItemView.setBackgroundColor(ContextCompat.getColor(getContext(), backgroundColor));
+        listViewItem.setBackgroundColor(ContextCompat.getColor(getContext(), backgroundColor));
 
 
         // Get the {@link AndroidFlavor} object located at this position in the list
         Music currentMusic= getItem(position);
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView artistTextView = listItemView.findViewById(R.id.artists_text_view);
+        TextView artistTextView = listViewItem.findViewById(R.id.artists_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         artistTextView.setText(currentMusic.getArtist());
@@ -80,21 +79,22 @@ public class MusicAdapter extends ArrayAdapter<Music> {
         // so that it can be shown in the ListView
 
         // Find the TextView in the list_item.xml layout with the ID version_name
-        TextView songtitleTextView = listItemView.findViewById(R.id.songTitle_text_view);
+        TextView songtitleTextView = listViewItem.findViewById(R.id.songTitle_text_view);
 
         // Get the version name from the current AndroidFlavor object and
         // set this text on the name TextView
         songtitleTextView.setText(currentMusic.getSongTitle());
 
         // Find the TextView in the list_item.xml layout with the ID version_number
-        TextView albumTextView = listItemView.findViewById(R.id.albumTitle_text_view);
+        TextView albumTextView = listViewItem.findViewById(R.id.albumTitle_text_view);
         // Get the version number from the current AndroidFlavor object and
         // set this text on the number TextView
         albumTextView.setText(currentMusic.getAlbum());
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
 
-        ImageView img = listItemView.findViewById(R.id.imageview);
+        ImageView img = listViewItem.findViewById(R.id.imageview);
+
         if (currentMusic.getImageResourceId() == 0) {
             img.setVisibility(View.GONE);
         } else {
@@ -103,7 +103,7 @@ public class MusicAdapter extends ArrayAdapter<Music> {
         }
 
 
-        return listItemView;
+        return listViewItem;
     }
 
 

@@ -18,16 +18,20 @@
         </activity>
         <activity
             android:name=".PopActivity"
-            android:label="Pop" />
+            android:label="Pop"
+            android:parentActivityName=".Music2Go" />
         <activity
             android:name=".RockActivity"
-            android:label="Rock" />
+            android:label="Rock"
+            android:parentActivityName=".Music2Go" />
         <activity
             android:name=".BluesActivity"
-            android:label="Blues" />
+            android:label="Blues"
+            android:parentActivityName=".Music2Go" />
         <activity
             android:name=".JazzActivity"
-            android:label="Jazz" />
+            android:label="Jazz"
+            android:parentActivityName=".Music2Go" />
 
     </application>
 
