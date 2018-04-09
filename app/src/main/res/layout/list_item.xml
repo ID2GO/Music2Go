@@ -5,10 +5,10 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageview"
+        android:id="@+id/image_view"
         android:layout_width="88dp"
         android:layout_height="88dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp"
         android:background="@color/tan_background"
         android:scaleType="centerCrop"
         android:src="@mipmap/ic_launcher" />
@@ -27,7 +27,7 @@
             android:textColor="@android:color/white"
             android:textSize="18sp"
             android:textStyle="bold"
-            tools:text="Artist" />
+            tools:text="@string/artist" />
 
         <TextView
             android:id="@+id/songTitle_text_view"
@@ -36,7 +36,7 @@
             android:layout_weight="1"
             android:textColor="@android:color/white"
             android:textSize="18sp"
-            tools:text="Title" />
+            tools:text="title" />
 
         <TextView
             android:id="@+id/albumTitle_text_view"
@@ -46,13 +46,8 @@
             android:textColor="@android:color/white"
             android:textSize="12sp"
             android:textStyle="italic"
-            tools:text="Album" />
+            tools:text="@string/album" />
 
     </LinearLayout>
 
-    <MediaController
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </MediaController>
 </LinearLayout>

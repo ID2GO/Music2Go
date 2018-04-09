@@ -8,12 +8,15 @@ import android.widget.TextView;
 
 public class Music2Go extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Set the content of the activity to use the activity_music2_go.xml layout file
         setContentView(R.layout.activity_music2_go);
+
 
         // Find the View that shows the pop, rock, blues, jazz categories
         TextView pop = findViewById(R.id.pop);
@@ -22,14 +25,15 @@ public class Music2Go extends AppCompatActivity {
         TextView jazz = findViewById(R.id.jazz);
 
 
-
         // Set a click listener on pop View
         pop.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the numbers View is clicked on.
 
+
             @Override
             public void onClick(View view) {
-                // Create a new intent to open the {@link FamilyActivity}
+                // Create a new intent to open the
+                // {@link PopActivity, RockActivity, BluesActivity, JazzActivity}
                 Intent popIntent = new Intent(Music2Go.this, PopActivity.class);
                 // Start the new activity
                 startActivity(popIntent);
@@ -65,6 +69,7 @@ public class Music2Go extends AppCompatActivity {
                 startActivity(jazzIntent);
             }
         });
+
 
     }
 }

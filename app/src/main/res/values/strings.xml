@@ -15,9 +15,16 @@
 <resources>
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Music 2 Go</string>
+    <string name="pop_label">Pop</string>
+    <string name="rock_label">Rock</string>
+    <string name="blues_label">Blues</string>
+    <string name="jazz_label">Jazz</string>
+
+    <string name="welcome">Welcome to the world of Music 2 Go!</string>
 
     <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
     <string name="category_pop">Pop</string>
+
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_jazz">Jazz</string>
@@ -28,22 +35,12 @@
     <!-- Category name for phrases [CHAR LIMIT=20] -->
     <string name="category_rock">Rock</string>
 
+    <!--titles of TextViews in List_Item-->
+    <string name="artist">Name of Artist</string>
+    <string name="title">Song Title</string>
+    <string name="album">Album Title</string>
 
-    <!-- Category Numbers : Miwok -->
-    <!--<string name="miwok_1">lutti</string>-->
 
-    <!-- Category Numbers : English -->
-    <!--<string name="eng_1">one</string>-->
-    <!--<string name="eng_2">two</string>-->
-    <!--<string name="eng_3">three</string>-->
-    <!--<string name="eng_4">four</string>-->
-    <!--<string name="eng_5">five</string>-->
-    <!--<string name="eng_6">six</string>-->
-    <!--<string name="eng_7">seven</string>-->
-    <!--<string name="eng_8">eight</string>-->
-    <!--<string name="eng_9">nine</string>-->
-    <!--<string name="eng_10">ten</string>-->
-    <!--```i-->
 
 
 </resources>

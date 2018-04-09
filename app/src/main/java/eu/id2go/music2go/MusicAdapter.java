@@ -93,7 +93,7 @@ public class MusicAdapter extends ArrayAdapter<Music> {
         // Return the whole list item layout (containing 2 TextViews and an ImageView)
         // so that it can be shown in the ListView
 
-        ImageView img = listViewItem.findViewById(R.id.imageview);
+        ImageView img = listViewItem.findViewById(R.id.image_view);
 
         if (currentMusic.getImageResourceId() == 0) {
             img.setVisibility(View.GONE);
