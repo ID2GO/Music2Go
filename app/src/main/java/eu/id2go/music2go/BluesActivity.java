@@ -4,6 +4,7 @@ public class BluesActivity extends MusicManager {
 
     @Override
     protected void addMusic() {
+
         songs.add(new Music("Eric Clapton", "Tears In Heaven", "Tears In Heaven", R
                 .drawable.eric_clapton_tears_in_heaven, R.raw.tears_in_heaven));
         songs.add(new Music("Eric Clapton", "Wonderful Tonight", "Wonderful Tonight", R

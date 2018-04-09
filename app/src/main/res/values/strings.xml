@@ -36,6 +36,7 @@
     <string name="category_rock">Rock</string>
 
     <!--titles of TextViews in List_Item-->
+    <string name="album_image">Album Image</string>
     <string name="artist">Name of Artist</string>
     <string name="title">Song Title</string>
     <string name="album">Album Title</string>
